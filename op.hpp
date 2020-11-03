@@ -4,10 +4,18 @@
 #include "base.hpp"
 
 class Op : public Base {
+    protected:
+	double inputValue;
+	std::string opString;
+
     public:
-        Op(double value) : Base() { }
-        virtual double evaluate() { return 0.0; }
-        virtual std::string stringify() { return ""; }
+	Op() : Base(){inputValue = 0.0; opString = "";}
+        Op(double value) : Base(), inputValue(value) {}
+        virtual double evaluate() { return inputValue; }
+        virtual std::string stringify() {
+	    opString = std::to_string(inputValue);
+	    return opString;
+	}
 };
 
 #endif //__OP_HPP__

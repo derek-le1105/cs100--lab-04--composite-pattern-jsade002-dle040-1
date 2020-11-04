@@ -35,4 +35,11 @@ TEST(AddTest, AddEvaluateWithMult) {
     EXPECT_EQ(test->evaluate(), 11);
 }
 
+TEST(AddTest, AddStringifyTest) {
+    Op* leftTest = new Op(2);
+    Op* rightTest = new Op(3);
+    Add* test = new Add(leftTest, rightTest);
+    EXPECT_EQ(test->stringify(), "(2.000000 + 3.000000)");
+}
+
 #endif //__ADD_TEST_HPP__

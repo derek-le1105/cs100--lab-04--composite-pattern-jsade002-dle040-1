@@ -15,14 +15,31 @@ TEST(PowTest, PowEvaluateZero){
 	EXPECT_EQ(test->evaluate(), 1);
 }
 
+TEST(PowTest, PowEvaluateZeroStringify){
+	Base* test = new Pow(zero, zero);
+	EXPECT_EQ(test->stringify(), "(0.000000 ** 0.000000)");
+}
+
+
 TEST(PowTest, PowEvaluateNegativeToThird){
 	Base* test = new Pow(nFive, three);
 	EXPECT_EQ(test->evaluate(), -125);
+}
+
+TEST(PowTest, PowEvaluateNegativeToThirdStringify){
+	Base* test = new Pow(nFive, three);
+	EXPECT_EQ(test->stringify(), "(-5.000000 ** 3.000000)");
 }
 
 TEST(PowTest, PowEvaluateNegativeToTwo){
 	Base* test = new Pow(nFive, two);
 	EXPECT_EQ(test->evaluate(), 25);
 }
+
+TEST(PowTest, PowEvaluateNegativeToTwoStringify){
+	Base* test = new Pow(nFive, two);
+	EXPECT_EQ(test->stringify(), "(-5.000000 ** 2.000000)");
+}
+
 
 #endif

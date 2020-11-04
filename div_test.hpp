@@ -13,9 +13,19 @@ TEST(DivTest, DivideByPositive){
 	EXPECT_EQ(test->evaluate(), 1);
 }
 
+TEST(DivTest, DivideByPositiveStringify){
+	Base* test = new Div(ten, ten);
+	EXPECT_EQ(test->stringify(), "(10.000000 / 10.000000)");
+}
+
 TEST(DivTest, DivideByNegative){
 	Base* test = new Div(ten, nTwo);
 	EXPECT_EQ(test->evaluate(), -5);
+}
+
+TEST(DivTest, DivideByNegativeStringify){
+	Base* test = new Div(ten, nTwo);
+	EXPECT_EQ(test->stringify(), "(10.000000 / -2.000000)");
 }
 
 #endif

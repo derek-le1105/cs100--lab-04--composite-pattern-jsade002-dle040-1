@@ -10,4 +10,15 @@ TEST(OpTest, OpEvaluateNonZero) {
     EXPECT_EQ(test->evaluate(), 8);
 }
 
+TEST(OpTest, OpEvaluateZero){
+    Op* test = new Op(0);
+    EXPECT_EQ(test->evaluate(), 0);
+}
+
+TEST(OpTest, OpStringifyTest) {
+    Op* test = new Op(2);
+    EXPECT_EQ(test->stringify(), "2.000000");
+}
+
+
 #endif //__OP_TEST_HPP__

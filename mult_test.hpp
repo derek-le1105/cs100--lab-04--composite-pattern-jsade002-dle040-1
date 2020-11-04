@@ -26,4 +26,11 @@ TEST(MultTest, MultEvaluateNegativeNums) {
     EXPECT_EQ(test->evaluate(), -9);
 }
 
+TEST(MultTest, MultStringifyTest) {
+    Op* leftTest = new Op(2);
+    Op* rightTest = new Op(3);
+    Mult* test = new Mult(leftTest, rightTest);
+    EXPECT_EQ(test->stringify(), "(2.000000 * 3.000000)");
+}
+
 #endif //__MULT_TEST_HPP__

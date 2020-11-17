@@ -1,12 +1,12 @@
 #include "gtest/gtest.h"
 
-#include "op_test.hpp"
-#include "mult_test.hpp"
-#include "add_test.hpp"
-#include "pow_test.hpp"
-#include "div_test.hpp"
-#include "rand_test.hpp"
-#include "sub_test.hpp"
+#include "tests/op_test.hpp"
+#include "tests/mult_test.hpp"
+#include "tests/add_test.hpp"
+#include "tests/pow_test.hpp"
+#include "tests/div_test.hpp"
+#include "tests/rand_test.hpp"
+#include "tests/sub_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

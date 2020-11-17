@@ -3,7 +3,7 @@
 
 #include "gtest/gtest.h"
 
-#include "div.hpp"
+#include "../operations/div.hpp"
 
 Op* nTwo = new Op(-2);
 Op* ten = new Op(10);

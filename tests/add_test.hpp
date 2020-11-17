@@ -3,7 +3,7 @@
 
 #include "gtest/gtest.h"
 
-#include "Add.hpp"
+#include "../operations/Add.hpp"
 
 TEST(AddTest, AddEvaluate2Num) {
     Op* leftTest = new Op(7);

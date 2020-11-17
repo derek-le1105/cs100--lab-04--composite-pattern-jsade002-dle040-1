@@ -3,7 +3,7 @@
 
 #include "gtest/gtest.h"
 
-#include "Mult.hpp"
+#include "../operations/Mult.hpp"
 
 TEST(MultTest, MultEvaluate2Num) {
     Op* leftTest = new Op(7);

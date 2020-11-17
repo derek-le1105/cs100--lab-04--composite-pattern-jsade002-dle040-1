@@ -3,7 +3,7 @@
 
 #include "gtest/gtest.h"
 
-#include "pow.hpp"
+#include "../operations/pow.hpp"
 
 Op* zero = new Op(0);
 Op* nFive = new Op(-5);

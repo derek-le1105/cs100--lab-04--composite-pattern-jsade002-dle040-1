@@ -1,7 +1,7 @@
 #ifndef RAND_TEST
 #define RAND_TEST
 
-#include "rand.hpp"
+#include "../operations/rand.hpp"
 
 TEST(RandTest, RandLessThan100){
 	Base* test = new Rand();
